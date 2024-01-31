@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery page</title>
+    <link rel="stylesheet" href="My_style.css">
+    <script src="https://kit.fontawesome.com/b732a93ed2.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    .image-container {
+        position: relative;
+      }
+    
+    
+    
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .modal-content {
+        max-width: 80%;
+        max-height: 80%;
+      }
+    
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+      }
+</style>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo-1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#index.html" onclick="location.href='index.html'">Home</a></li>
+                <li><a href="#About.html" onclick="location.href='About.html'">About</a></li>
+                <li><a href="#Services" onclick="location.href='Services.html'">Service</a></li>
+                <li><a href="#contact.html" onclick="location.href='contact.html'">Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title" style="color: blue">Gallery</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/P1.jpg" alt="Image 1" class="image">
+                        <div class="layer">
+                            <h3> </h3>
+                            <p></p>
+                            <a class="zoom-button" onclick="openModal(1)"><i class="fa-solid fa-arrow-up-right-from-square" ></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/P2.jpg" alt="Image 2" class="image">
+                        <div class="layer">
+                            <h3> </h3>
+                            <p></p>
+                            <a class="zoom-button" onclick="openModal(2)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/P3.jpg" alt="Image 3" class="image">
+                        <div class="layer">
+                            <h3> </h3>
+                            <p></p>
+                            <a class="zoom-button" onclick="openModal(3)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+        
+                    <div class="work">
+                        <img src="images/P4.jpg" alt="Image 4" class="image">
+                        <div class="layer">
+                            <h3> </h3>
+                            <p></p>
+                            <a class="zoom-button" onclick="openModal(4)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/P5.jpg" alt="Image 5" class="image">
+                        <div class="layer">
+                            <h3> </h3>
+                            <p></p>
+                            <a class="zoom-button" onclick="openModal(5)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/P6.jpg" alt="Image 6" class="image">
+                        <div class="layer">
+                            <h3> </h3>
+                            <p></p>
+                            <a class="zoom-button" onclick="openModal(6)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/P7.jpg" alt="Image 7" class="image">
+                        <div class="layer">
+                            <h3> </h3>
+                            <p></p>
+                            <a class="zoom-button" onclick="openModal(7)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/P8.jpg" alt="Image 8" class="image">
+                        <div class="layer">
+                            <h3> </h3>
+                            <p></p>
+                            <a class="zoom-button" onclick="openModal(8)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/P9.jpg" alt="Image 9" class="image">
+                        <div class="layer">
+                            <h3> </h3>
+                            <p></p>
+                            <a class="zoom-button" onclick="openModal(9)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/P10.jpg" alt="Image 10" class="image">
+                        <div class="layer">
+                            <h3> </h3>
+                            <p></p>
+                            <a class="zoom-button" onclick="openModal(10)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/P11.jpeg" alt="Image 11" class="image">
+                        <div class="layer">
+                            <h3> </h3>
+                            <p></p>
+                            <a class="zoom-button" onclick="openModal(11)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div id="myModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                    </div>
+                </div>
+                <a href="#contact" class="btn">Hire Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------Portfolio------------------------------------------- -->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!---------------------------------------contact----------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> </h1>
+                <div class="social-icons">
+                    <a href="https://wa.me/message/UKEEA6BU3AG4O1"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://twitter.com/mulalom2121?t=2hdzIE4NhSQtNK6CyYbd8w&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/psettings/message-preferences?lici=urn%3Ali%3Apage%3Ap_flagship3_settings%3BhifMx9xbRC%2BfIM249qNOig%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/mulalo.mudau.35977?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p style="color: white;">Copyright © 2024 MJ Pool Services | Design by <a href="#https://www.motautl.co.za/" onclick="location.href='https://www.motautl.co.za/'">Thabiso<i class="fas fa-heart"></i></a>  | All rights Reserved. </p>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------------------->
+<!----------------------------------Main & Body End-------------------------------------------------->
+
+<!----------------------------------Scripts Sections----------------------------------------------- -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right= "0";
+    }
+    function closemenu(){
+        sidemeu.style.right= "-200px";
+    }
+
+</script>
+<!-----------------------------------------contact form sript----------------------------------------------------------- --> 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw4MuG0LWqs59JJBUhDBJekhr126OpqP1WiF1wWEF8YPCvQjbhOqEo2LMLQ7FVp6SaX/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+
+<script>
+    function openModal(imageNumber) {
+      const modal = document.getElementById('myModal');
+      const modalImg = document.getElementById('modalImage');
+      const images = ['images/P1.jpg', 'images/P2.jpg', 'images/P3.jpg', 'images/P4.jpg', 'images/P5.jpg', 'images/P6.jpg', 'images/P7.jpg', 'images/P8.jpg', 'images/P9.jpg', 'images/P10.jpg', 'images/P11.jpeg'];
+  
+      modal.style.display = 'flex';
+      modalImg.src = images[imageNumber - 1];
+    }
+  
+    function closeModal() {
+      const modal = document.getElementById('myModal');
+      modal.style.display = 'none';
+    }
+  
+    document.querySelectorAll('.work').forEach(container => {
+      container.addEventListener('mouseover', () => {
+        container.querySelector('.zoom-button').style.display = 'block';
+      });
+  
+      container.addEventListener('mouseout', () => {
+        container.querySelector('.zoom-button').style.display = 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>

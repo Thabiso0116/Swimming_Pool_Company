@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME to MJ Pool Services</title>
+    <link rel="stylesheet" href="My_style.css">
+    <script src="https://kit.fontawesome.com/b732a93ed2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo-1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About.html" onclick="location.href='About.html'">About</a></li>
+                <li><a href="#Services" onclick="location.href='Services.html'">Service</a></li>
+                <li><a href="#Gallery.html" onclick="location.href='Gallery.html'">Gallery</a></li>
+                <li><a href="#contact.html" onclick="location.href='contact.html'">Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <bodyz style="margin: 0;font-family: Arial, sans-serif;display: flex;align-items: center;justify-content: center;height: 100vh;">
+            <div class="columns" style="display: flex;width: 80%;max-width: 800px;">
+                <div class="column welcome-column" style="color: white;text-align: center;">
+                    <div class="header-text">
+                        <h1>WELCOME to <br><span>MJ Pool Services</span><br></h1>
+                        <p class="prof">We offer <span id="dynamic-text"></span></p>
+                        <a href="#contact.html" onclick="location.href='contact.html'" class="btn">Hire Us.</a>
+                    </div>
+                </div>
+                <div class="column company-column" style="background-color: #3498db;color: white;padding: 20px;">
+                    <p>The best swimming pool company, which has been in the industry for over 7 years, is very reliable and we always deliver on time. We are a Gauteng-based company with all the resources required, and we offer the best service for a given project.</p>
+                </div>
+            </div>
+        </bodyz>
+        <br><br><br><br><br><br><br><br>
+    </div>
+</div>
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title" style="color:blue">Area Covered</h1>
+        <p>We cover the whole of Gauteng, from suburbs, towns etc.</p>
+        <div class="services-list">
+            <div>
+                <h2 style="color:blue">pool pump repairs</h2>
+                <p>Do you have a leaking pump, or are you struggling with a nasty motor sound? Are you struggling with your creepy or less-suctioned behavior? We are the experts</p>
+            </div>
+            <div>
+                <h2 style="color:blue">Pool Tiling, Painting</h2>
+                <p>If you have missing or damaged tiles, we can carry out patch repairs underwater, using specialist grout and adhesive.</p>
+            </div>
+            <div>
+                <h2 style="color:blue">Pool Pipe Repairs</h2>
+                <p>We replace leaking skimmer boxes, fix pool pipe leaks, repair structural cracks in concrete and fiberglass pools, and also offer a complete resurfacing.</p>
+            </div>
+            <div>
+                <h2 style="color:blue">Pool Pump</h2>
+                <p>Our team is incredibly experienced in their field of work, and can handle various issues, from repairing pumps to fixing filtration and heating systems.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="background-color: black;display: flex;justify-content: space-between;padding: 20px;">
+        <div class="column" style="flex: 1;padding: 10px;border-right: 2px solid white;color: white;text-align: center;">
+            <p id="column1"></p>
+            <p>Trusted Clients</p>
+        </div>
+        <div class="column" style="flex: 1;padding: 10px;border-right: 2px solid white;color: white;text-align: center;">
+            <p id="column2"></p>
+            <p>Projects</p>
+        </div>
+        <div class="column" style="flex: 1;padding: 10px;border-right: 2px solid white;color: white;text-align: center;">
+            <p id="column3"></p>
+            <p>Pool Cleaned</p>
+        </div>
+        <div class="column" style="flex: 1;padding: 10px;border-right: 2px solid white;color: white;text-align: center;">
+            <p id="column4"></p>
+            <p>Success Rate(%)</p>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------------------------------about me---------------------------- -->
+<div id="about">
+    <div class="containers">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/P1.jpg">
+                <a href="#About.html" onclick="location.href='About.html'" class="btn">Learn more About Us.<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="about-col-2">
+                <div id="services">
+                    <div class="container">
+                        <h1 class="sub-title" style="color:blue">Why Choose Our swimming pool services</h1>
+                        <p style="color: white;">We build affordable and superior-quality indoor and outdoor swimming pools, so you can be assured that you’re getting great value for money when you take up any of our offers.</p>
+                        <div class="services-list">
+                            <div>
+                                <h2 style="color:blue">Experienced pool expects</h2>
+                                <p>We are good at diagnosing and offering the exact service needed. We value our clients at all times, and our team consists of friendly individuals who are dedicated to their work all the time. Our aim is to impress</p>
+                            </div>
+                            <div>
+                                <h2 style="color:blue">Effiency and neat</h2>
+                                <p>We work within your time frame and you never get to clean after us ,we value your health and well being therefore we will your place neat.</p>
+                            </div>
+                            <div>
+                                <h2 style="color:blue">planning and designing</h2>
+                                <p>We are also good in pool designing and giving ideas, pool constructors and repairs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<!---------------------------------services--------------------------------------------------------------- -->
+<style>
+    
+.testimonials{
+    padding: 40px 0;
+    background: #080808;
+    color: blue;
+    text-align: center;
+  }
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .testimonial{
+    background: black;
+    padding: 30px;
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  .stars{
+    color: #6ab04c;
+    margin-bottom: 20px;
+  }
+  
+  
+  @media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .col{
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+</style>
+<bodya>
+
+    <div class="testimonials">
+      <div class="inner">
+        <h1>Testimonials</h1>
+        <div class="border"></div>
+
+        <div class="row">
+          <div class="col">
+            <div class="testimonial">
+              <img src="images/I1.jpg" alt="">
+              <div class="name">Annie Franklin</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p style="color: white;">I am extremely happy about 's service, they are professional, right on time and their products are high quality and durable. I definitely recommend to you anytime.</p><br>
+              <p style="color: blue;">Centurion</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="images/I2.jpg" alt="">
+              <div class="name">Brian Jackson</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p style="color: white;">I am impressed about it's service, they are professional, right on time and their products are high quality and durable. I definitely recommend to you anytime.</p><br>
+              <p style="color: blue;">Sandton</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="images/I3.jpg" alt="">
+              <div class="name">Tracy Stewart</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p style="color: white;">I liked their service delivery more than anything, keep doing the good work. I definitely recommend these guys to anyone anytime.</p><br>
+              <p style="color: blue;">Riverside</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </bodya>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title" style="color:blue">Request a Free call out</h1>
+        <p style="color: white;">We are very quick and efficient. Contact us for a FREE non nonobligatory quotation so that we can turn your dream into a reality.</p>
+        <a href="#contact.html" onclick="location.href='contact.html'" class="btn">Hire Us.</a>
+    </div>
+</div>
+
+
+<!---------------------------------------contact----------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <div class="social-icons">
+                    <a href="https://wa.me/message/UKEEA6BU3AG4O1"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://twitter.com/mulalom2121?t=2hdzIE4NhSQtNK6CyYbd8w&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/psettings/message-preferences?lici=urn%3Ali%3Apage%3Ap_flagship3_settings%3BhifMx9xbRC%2BfIM249qNOig%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/mulalo.mudau.35977?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p style="color: white;">Copyright © 2024 MJ Pool Services| Design by <a href="#https://www.motautl.co.za/" onclick="location.href='https://www.motautl.co.za/'">Thabiso<i class="fas fa-heart"></i></a>  | All rights Reserved. </p>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------------------->
+<!----------------------------------Main & Body End-------------------------------------------------->
+
+<!----------------------------------Scripts Sections----------------------------------------------- -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right= "0";
+    }
+    function closemenu(){
+        sidemeu.style.right= "-200px";
+    }
+
+</script>
+<!-----------------------------------------contact form sript----------------------------------------------------------- --> 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw4MuG0LWqs59JJBUhDBJekhr126OpqP1WiF1wWEF8YPCvQjbhOqEo2LMLQ7FVp6SaX/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const dynamicTextElement = document.getElementById("dynamic-text");
+        const offerings = ["Pool Pump Repair", "Filters and Multi-Port Valves", "Fibre Glass", "Pool Renovations", "Pool Maintenance, Cleaning", "Pool Relining"];
+        let index = 0;
+      
+        function typeText(text, callback) {
+          let currentIndex = 0;
+          const intervalId = setInterval(function () {
+            dynamicTextElement.textContent = text.substring(0, currentIndex + 1);
+            currentIndex++;
+      
+            if (currentIndex === text.length) {
+              clearInterval(intervalId);
+              setTimeout(callback, 1000);
+            }
+          }, 100);
+        }
+      
+        function cancelText(callback) {
+          let currentIndex = dynamicTextElement.textContent.length;
+          const intervalId = setInterval(function () {
+            dynamicTextElement.textContent = dynamicTextElement.textContent.substring(0, currentIndex - 1);
+            currentIndex--;
+      
+            if (currentIndex === 0) {
+              clearInterval(intervalId);
+              setTimeout(callback, 1000);
+            }
+          }, 100);
+        }
+      
+        function nextOffering() {
+          typeText(offerings[index], function () {
+            cancelText(function () {
+              index = (index + 1) % offerings.length;
+              nextOffering();
+            });
+          });
+        }
+      
+        // Start the sequence
+        nextOffering();
+      });
+      
+</script>
+
+<script>
+    function count(start, end, step, elementId) {
+        let current = start;
+        const interval = setInterval(() => {
+            document.getElementById(elementId).innerText = current;
+            current += step;
+            if (current > end) {
+                clearInterval(interval);
+            }
+        }, 20); // Adjust the interval for smoother counting
+    }
+
+    count(0, 111, 1, 'column1');
+    count(0, 57, 1, 'column2');
+    count(0, 34, 1, 'column3');
+    count(0, 99.5, 0.5, 'column4');
+</script>
+</body>
+</html>

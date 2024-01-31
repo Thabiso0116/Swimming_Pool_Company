@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <link rel="stylesheet" href="My_style.css">
+    <script src="https://kit.fontawesome.com/b732a93ed2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo-1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#index.html" onclick="location.href='index.html'">Home</a></li>
+                <li><a href="#Services" onclick="location.href='Services.html'">Service</a></li>
+                <li><a href="#Gallery.html" onclick="location.href='Gallery.html'">Gallery</a></li>
+                <li><a href="#contact.html" onclick="location.href='contact.html'">Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <h1 class="sub-title" style="color: blue; text-align:center;">About Us</h1>
+        <p style="color: white;">We are a friendly and professional pool services & renovation company.</p><br>
+        <div id="about">
+            <div class="containers">     
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/P1.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title" style="color:blue;">We provide great services and ideas</h1>
+                        <p style="color: white;"><br><br><br>We offer a variety of swimming pools solutions for new and existing swimming pools so that you can continue to enjoy special moments with family and friends whilst entertaining in style. We pride ourselves on being a trustworthy company that will accommodate all your needs for installations, renovations, and maintenance of your swimming pool.<br><br><br><br>
+
+                            We offer reliable and trustworthy services which include pool installations, renovations and maintenance, fiberglass and marbelite options, solar heating, pool repairs, pool pump repairs, pool painting and much more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#contact" class="btn">Hire Us.</a>
+    </div>
+</div>
+<br><br><br><br><br><br>
+<!---------------------------------------contact----------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> </h1>
+                <div class="social-icons">
+                    <a href="https://wa.me/message/UKEEA6BU3AG4O1"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://twitter.com/mulalom2121?t=2hdzIE4NhSQtNK6CyYbd8w&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/psettings/message-preferences?lici=urn%3Ali%3Apage%3Ap_flagship3_settings%3BhifMx9xbRC%2BfIM249qNOig%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/mulalo.mudau.35977?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p style="color: white;">Copyright © 2024 MJ Pool Services| Design by <a href="#https://www.motautl.co.za/" onclick="location.href='https://www.motautl.co.za/'">Thabiso<i class="fas fa-heart"></i></a>  | All rights Reserved. </p>
+    </div>
+</div>
+
+
+
+<!----------------------------------Scripts Sections----------------------------------------------- -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right= "0";
+    }
+    function closemenu(){
+        sidemeu.style.right= "-200px";
+    }
+
+</script>
+<!-----------------------------------------contact form sript----------------------------------------------------------- --> 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw4MuG0LWqs59JJBUhDBJekhr126OpqP1WiF1wWEF8YPCvQjbhOqEo2LMLQ7FVp6SaX/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+
+
+
+
+</body>
+</html>
